@@ -6,13 +6,14 @@
 <body>
   <div id="image">
     function image() {
-    var img = document.createElement("IMG");
+    var image = document.createElement("IMG");
+    image.alt = "Alt information for image";
+    image.setAttribute('class', 'photo');
+    image.src="/images/abc.jpg";
+    $(#TheDiv).html(image);
     img.src = "/images/img1.gif";
     $('#image').html(img); 
-}
-    
-    
-    
-  </div>
+    }
+   </div>
   <script type="image/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 </body>
